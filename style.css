@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#container {
+  width: 640px;
+  height: 640px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+
+.square{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
