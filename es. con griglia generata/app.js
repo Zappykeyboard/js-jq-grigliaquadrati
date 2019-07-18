@@ -25,9 +25,9 @@ $(document).ready(function () {
   var redSquares = 0;
   var selectedSquare, colSelector, squareSelector;
   while (redSquares < 15) {
-    //seleziono la colonna, generando un numero random tra 0 7
+    //seleziono la colonna, generando un numero random tra 0 e 7
     colSelector = Math.floor(Math.random() * 7);
-    //seleziono il quadrato, generando un numero random tra 0 7
+    //seleziono il quadrato, generando un numero random tra 0 e 7
     squareSelector = Math.floor(Math.random() * 7);
     
     selectedSquare = $(".sq-" + colSelector + "-" + squareSelector);
@@ -35,9 +35,8 @@ $(document).ready(function () {
     //Se il quadrato non contiene la classe red, la aggiungo
    if (selectedSquare.hasClass("red") === false){
           selectedSquare.addClass("red");
-          redSquares++
+          redSquares++;
         }  
-
 
   }
 
